@@ -1,0 +1,111 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background-image: url('https://pbs.twimg.com/media/DgJrYUEUcAA4nt-?format=jpg&name=4096x4096');
+  color: black;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 5rem 0 1rem;
+}
+
+section {
+  overflow: auto;
+  resize: both;
+}
+
+.signs {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: #c2c3c5;
+  font-family: 'Uncial Antiqua', cursive;
+  margin: 60px 0 0;
+  text-align: center;
+}
+
+label {
+  background-color: rgba(1, 10, 90, .65);
+  color: white;
+  font-weight: bold;
+}
+
+.px-4 {
+  align-items: center;
+  display: inline-block;
+  justify-content: center;
+  opacity: 1;
+}
+
+.alert {
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 22px;
+  opacity: .72;
+  text-align: center;
+}
+
+.breadcrumb {
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 18px;
+  opacity: .72;
+}
+
+.breadcrumb-item {
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.breadcrumb.item-group {
+  z-index: 1;
+}
+
+h5 {
+  font-family: 'Baloo Thambi 2', cursive;
+  text-align: center;
+}
+
+section {
+  background-color: #ffffff;
+  border: 6px solid rgba(1, 10, 90, .6);
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 20px;
+  opacity: .75;
+  outline: none;
+  padding: 1rem;
+}
+
+.hide  {
+  display: none;
+}
+
+footer {
+  background-color: #496870;
+  bottom: 0;
+  color: white;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 19px;
+  left: 0;
+  margin-bottom: 0;
+  opacity: .65;
+  position: fixed;
+  right: 0;
+}
+
+.personal {
+  float: right;
+  margin-right: 2%;
+}
+
+.photo-credit {
+  float: left;
+  margin-left: 2%;
+}
+
+@media (max-width: 770px) {
+  footer {
+    position: relative;
+}
+}

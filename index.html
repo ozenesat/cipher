@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>~~lists~~</title>
+    <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Do not add `link` tags-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Do not add `script` tags-->
+    <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+    <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  </head>
+  <body>
+
+
+    <h1>Welcome to the Lists!</h1>
+    <!-- !!! Info for welcome page !!!-->
+    <!-- <div class="breadcrumb info">
+    <h5> Here, you can create and customize any list of your choice with
+      up to five items per list with a due date option.
+      You can also update or delete any information on your lists or the list itself anytime.
+      Keep in mind that all of your lists and data are private, so you have to
+      sign-in to access them.
+    </h5>
+    </div> -->
+    <!-- !!! Alerts !!!-->
+     <!-- <div class="hide alert alert-success" role="alert">
+     A simple success alert
+     </div>
+     <div class="hide alert alert-danger" role="alert">
+     A simple danger alert
+     </div>
+  <div class="btn-group signs"> -->
+    <!-- !!! Sign-up form & Bar !!!-->
+    <!-- <div class="group sub">
+     <div id="sub" class="btn">
+       <button class="btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+         Sign-up!
+       </button>
+       <div class="dropdown-menu">
+         <form  id="sign-up" class="px-4 py-3">
+           <div class="form-group">
+             <label>Email address</label>
+             <input type="text" name="credentials[email]" class="form-control" placeholder="email@example.com">
+           </div>
+           <div class="form-group">
+             <label for="exampleDropdownFormPassword1">Password</label>
+             <input type="password" name="credentials[password]" class="form-control" placeholder="Password">
+           </div>
+           <div class="form-group">
+             <label for="exampleDropdownFormPassword1">Confirmation</label>
+             <input type="password" name="credentials[password_confirmation]" class="form-control" placeholder="Password">
+           </div>
+           <button type="submit" class="btn btn-primary">Sign up</button>
+         </form>
+       </div>
+     </div> -->
+
+    <!-- !!! Sign-in form & Bar !!!-->
+     <!-- <div id="sib" class="btn">
+       <button class="btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+         Sign-in!
+       </button>
+       <div class="dropdown-menu">
+         <form id="sign-in" class="px-4 py-3">
+           <div class="form-group">
+             <label>Email address</label>
+             <input type="text" name="credentials[email]" class="form-control" placeholder="email@example.com">
+           </div>
+           <div class="form-group">
+             <label>Password</label>
+             <input type="password" name="credentials[password]" class="form-control" placeholder="Password">
+           </div>
+            <button type="submit" class="btn btn-primary" value="Sign in!">Sign in</button>
+         </form>
+       </div>
+      </div>
+  </div>
+</div> -->
+     <div class="btn-group breadcrumb item-group">
+        <button id="all-items" class="btn-secondary btn-lg" type="submit">
+          Show All Lists
+        </button>
+        <button id="cib" class="btn-secondary btn-lg" type="submit">
+          Create New List
+        </button>
+     </div>
+        <!-- !!! Sign-out button !!!-->
+        <!-- <button id="sign-out" class="btn-secondary btn-lg hide" type="submit">
+          Sign-out
+        </button> -->
+        <!-- !!! Change-password form & Bar !!!-->
+         <!-- <div id="cpb" class="btn hide">
+           <button class="btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+             Change Password
+           </button>
+           <div class="dropdown-menu">
+             <form id="change-password" class="px-4 py-3 pass">
+               <div class="form-group">
+                 <label> Current Password </label>
+                 <input type="password" name="passwords[old]" class="form-control" placeholder="Current Password">
+               </div>
+               <div class="form-group">
+                 <label> New Password </label>
+                 <input type="password" name="passwords[new]" class="form-control" placeholder="New Password">
+               </div>
+               <button type="submit" class="btn btn-primary" value="Change Password!">Submit</button>
+             </form>
+           </div>
+         </div>
+     </div> -->
+
+
+    <!-- !!! Create Items form !!!-->
+    <form id="create-item" class="container px-4 py-3">
+      <div class="form-group">
+        <label>List Title</label>
+        <input type="text" name="Title" placeholder="Title" class="form-control col-12 box" >
+      </div>
+      <div class="form-group">
+        <label>List Description</label>
+        <input type="text" name="Description" placeholder="Description" class="form-control">
+      </div>
+      <!-- <div class="form-group">
+        <label>Item 1</label>
+        <input type="text" name="list_item[item1]" placeholder="New Item" class="form-control" >
+      </div>
+      <div class="form-group">
+        <label>Item 2</label>
+        <input type="text" name="list_item[item2]" placeholder="New Item" class="form-control" >
+      </div>
+      <div class="form-group">
+        <label>Item 3</label>
+        <input type="text" name="list_item[item3]" placeholder="New Item" class="form-control" >
+      </div>
+      <div class="form-group">
+        <label>Item 4</label>
+        <input type="text" name="list_item[item4]" placeholder="New Item" class="form-control" >
+      </div>
+      <div class="form-group">
+        <label>Item 5</label>
+        <input type="text" name="list_item[item5]" placeholder="New Item" class="form-control" >
+      </div>
+      <div class="form-group">
+        <label>Due Date</label>
+        <input type="date" name="list_item[due_on]" placeholder="Date" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Complete Status</label>
+        <input type="text" name="list_item[completed]" placeholder="Complete Status" class="form-control">
+      </div> -->
+       <button type="submit" class="btn btn-primary" value="Create-Item!">Create List!</button>
+    </form>
+
+
+
+   <main>
+      <div id="content" class="content hide"></div>
+   </main>
+<br>
+<br>
+   <!-- <footer>
+    <p class="photo-credit">Photo by <a href="https://stock.adobe.com/contributor/202539725/halitomercamci"> Halit Omer Camci</a>.</p>
+    <p class="personal"> Developed by <a href="https://www.linkedin.com/in/ozenesat/">M.Esat OZEN</a> on <a href="https://github.com/ozenesat/"> Git Hub</a>.</p>
+  </footer> -->
+
+  </body>
+</html>

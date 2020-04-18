@@ -1,0 +1,41 @@
+<form class="item-update" data-id="{{item.id}}">
+  <form id="create-item" class="px-4 py-3 hide">
+    <div class="form">
+      <label>List Title</label>
+      <input type="text" name="list_item[title]" placeholder="Title" value="{{item.title}}">
+    </div>
+    <div class="form">
+      <label>Description</label>
+      <input type="text" name="list_item[description]" class="form-control" placeholder="Description" value="{{item.description}}">
+    </div>
+    <div class="form-group">
+      <label>Item 1</label>
+      <input type="text" name="list_item[item1]" placeholder="New Item" class="form-control" value="{{item.item1}}" >
+    </div>
+    <div class="form-group">
+      <label>Item 2</label>
+      <input type="text" name="list_item[item2]" placeholder="New Item" class="form-control" value="{{item.item2}}" >
+    </div>
+    <div class="form-group">
+      <label>Item 3</label>
+      <input type="text" name="list_item[item3]" placeholder="New Item" class="form-control" value="{{item.item3}}" >
+    </div>
+    <div class="form-group">
+      <label>Item 4</label>
+      <input type="text" name="list_item[item4]" placeholder="New Item" class="form-control" value="{{item.item4}}" >
+    </div>
+    <div class="form-group">
+      <label>Item 5</label>
+      <input type="text" name="list_item[item5]" placeholder="New Item" class="form-control" value="{{item.item5}}" >
+    </div>
+    <div class="form">
+      <label>Due Date</label>
+      <input type="date" name="list_item[due_on]" placeholder="Date" value="{{item.due_on}}">
+    </div>
+    <div class="form">
+      <label>Complete Status</label>
+      <input type="text" name="list_item[completed]" placeholder="Complete Status" value="{{item.completed}}">
+    </div>
+     <button type="submit" class="btn btn-secondary" value="Update-Item!">Submit!</button>
+  </form>
+</form>
