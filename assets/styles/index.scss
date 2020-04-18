@@ -1,0 +1,79 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background-image: url('https://d.ibtimes.co.uk/en/full/1409177/enigma-machine.jpg?w=1150&f=4a3466b0b84b4b68b7b3815573253e07');
+  color: black;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 5rem 0 1rem;
+}
+
+h5 {
+  font-family: 'Baloo Thambi 2', cursive;
+  text-align: center;
+}
+
+.breadcrumb {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 18px;
+  opacity: .82;
+}
+
+.signs {
+  display: flex;
+  justify-content: center;
+  opacity: 0.88;
+}
+
+.hide  {
+  display: none;
+}
+
+h1 {
+  color: #c2c3c5;
+  font-weight: bold;
+  font-family: 'Homemade Apple', cursive;
+  margin: 60px 0 0;
+  text-align: center;
+}
+
+label {
+  background-color: rgba(1, 10, 90, .85);
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #496870;
+  bottom: 0;
+  color: white;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 17px;
+  left: 0;
+  margin-bottom: 0;
+  opacity: .81;
+  position: fixed;
+  right: 0;
+  display: block;
+  flex: auto;
+
+}
+
+.personal {
+  float: right;
+  margin-right: 2%;
+}
+
+.photo-credit {
+  float: left;
+  margin-left: 2%;
+}
+
+@media (max-width: 770px) {
+  footer {
+    position: relative;
+}
+}
