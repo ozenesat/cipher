@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>~~cipher~~</title>
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Do not add `link` tags-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Do not add `script` tags-->
+    <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+    <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  </head>
+  <body>
+
+    <h1>Welcome to the Cipher!</h1>
+
+    <div class="breadcrumb info">
+      <h5> Do you need to encrypt your emails? Let's do it with the Caesar cipher method.
+        You just need to pick up a number and enter your text.
+        Do not forget the number, you may need it to decrypt your email!</h5>
+    </div>
+
+    <div class="btn-group signs">
+        <button id="enc" class="btn-secondary btn-lg" type="button">
+          Encode
+        </button>
+        <button id="dec" class="btn-secondary btn-lg" type="button">
+          Decode
+        </button>
+    </div>
+
+
+
+    <form id="encode" class="container px-4 py-3 hide">
+      <div class="form-group">
+        <label>Enter the number</label>
+        <input class="num" type="number" name="number" placeholder="number only" required>
+      </div>
+      <div class="form-group">
+        <label>Enter the Text</label>
+        <textarea name="text" class="word" style="height: 200px; width: 100%;"></textarea>
+      </div>
+       <button type="submit" class="btn btn-primary">Encode</button>
+    </form>
+
+    <form id="decode" class="container px-4 py-3 hide">
+      <div class="form-group">
+        <label>Enter the number</label>
+        <input class="num" type="number" name="number" placeholder="number only" required>
+      </div>
+      <div class="form-group">
+        <label>Enter the Text</label>
+        <textarea name="text" class="word" style="height: 200px; width: 100%;"></textarea>
+      </div>
+       <button type="submit" class="btn btn-primary">Decode</button>
+    </form>
+
+
+
+
+    <div id="result" class="container px-4 py-3 hide">
+      <label>Ciphertext</label>
+      <textarea name="text" id="resbar" style="height: 200px; width: 100%;" readonly></textarea>
+    </div>
+    <br>
+    <br>
+    <br>
+   <footer>
+    <p class="photo-credit">Photo by <a href="https://www.mubsta.com/"> Shaun Armstrong</a>.</p>
+    <p class="personal"> Developed by <a href="https://www.linkedin.com/in/ozenesat/">M.Esat OZEN</a> on <a href="https://github.com/ozenesat/"> Git Hub</a>.</p>
+  </footer>
+
+  </body>
+</html>
