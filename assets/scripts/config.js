@@ -2,8 +2,8 @@
 
 let apiUrl
 const apiUrls = {
-  production: 'http://ozenesat.rapic.io/Lists/List',
-  development: 'http://ozenesat.rapic.io/Lists/List'
+  production: '-',
+  development: 'http://localhost:7165/'
 }
 
 if (window.location.hostname === 'localhost') {

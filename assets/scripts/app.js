@@ -1,33 +1,26 @@
 'use strict'
+const events = require('./events.js')
 
-const authEvents = require('./auth/events.js')
-const itemsEvents = require('./items/events.js')
+const showEncode = function () {
+  $('#encode').removeClass('hide')
+  $('#result').removeClass('hide')
+  $('#decode').addClass('hide')
+  $('#resbar').text('')
+  $('#encode').trigger('reset')
+}
 
-// Pops up the create list form.
-const cib = function () {
-  $('#create-item').removeClass('hide')
-  $('#content').addClass('hide')
+const showDecode = function () {
+  $('#decode').removeClass('hide')
+  $('#result').removeClass('hide')
+  $('#encode').addClass('hide')
+  $('#resbar').text('')
+  $('#decode').trigger('reset')
 }
 
 $(() => {
-  // sign up for new user.
-  $('#sign-up').on('submit', authEvents.onSignUp)
+  $('#encode').on('submit', events.encode)
+  $('#decode').on('submit', events.decode)
+  $('#enc').on('click', showEncode)
+  $('#dec').on('click', showDecode)
 
-  // sign in for registered user.
-  $('#sign-in').on('submit', authEvents.onSignIn)
-
-  // sign out for signed-in user.
-  $('#sign-out').on('click', authEvents.onSignOut)
-
-  // change password for registered user.
-  $('#change-password').on('submit', authEvents.onChangePassword)
-
-  // clear the alerts from the page.
-  $('body').on('click', authEvents.clear)
-
-  // load the create list form.
-  $('#cib').on('click', cib)
-
-  // list_items' table related events.
-  itemsEvents.addHandlers()
 })
