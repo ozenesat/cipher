@@ -7,6 +7,8 @@ const showEncode = function () {
   $('#decode').addClass('hide')
   $('#resbar').text('')
   $('#encode').trigger('reset')
+  $('#enc').addClass('btn-danger')
+  $('#dec').removeClass('btn-danger')
 }
 
 const showDecode = function () {
@@ -15,6 +17,8 @@ const showDecode = function () {
   $('#encode').addClass('hide')
   $('#resbar').text('')
   $('#decode').trigger('reset')
+  $('#dec').addClass('btn-danger')
+  $('#enc').removeClass('btn-danger')
 }
 
 $(() => {
