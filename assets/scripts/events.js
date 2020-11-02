@@ -9,7 +9,6 @@ const Cipher = {
 // new chipher alphabet generator with a number `n`
   generator: function (n) {
     const m = (n*n) % 26
-    console.log(m)
     for (let i = 0; i < (this.alphabet.length / 2) - 1; i++) {
       this.chipher[i] = this.alphabet[(i + m) % 26]
       this.chipher[i + 27] = this.alphabet[(27 + ((i + m) % 26))]
